@@ -1,1 +1,10 @@
 /.metadata/
+node_modules/
+dist/
+
+# IDE
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
