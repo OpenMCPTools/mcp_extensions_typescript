@@ -4,7 +4,7 @@ export enum Role {
 }
 
 // ---------------------------------------------------------------------------
-// Data interfaces (replacing Java-style DTO classes with getters/setters)
+// Data interfaces 
 // ---------------------------------------------------------------------------
 
 export interface Icon {
@@ -228,7 +228,7 @@ export class Resource extends AbstractLeaf {
 }
 
 // ---------------------------------------------------------------------------
-// Generic converter — replaces 6 Java-style interfaces + 5 abstract classes
+// Generic converter 
 // ---------------------------------------------------------------------------
 
 export interface Converter<TInternal, TExternal> {
