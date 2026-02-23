@@ -2,11 +2,15 @@
 
 Extensions for the MCP (Model Context Protocol) TypeScript SDK.
 
-## What's in here
+## Server-Side Grouping
+
+The [org.openmcptools.extensions.groups](https://github.com/OpenMCPTools/mcp_extensions_typescript/tree/main/org.openmcptools.extensions.groups) module provides an MCP extension to support hierarchical server-side grouping based upon the [typescript sdk](https://github.com/modelcontextprotocol/typescript-sdk).
+
+### What's in here
 
 The project defines a tree-based data model to organize **tools**, **prompts**, and **resources** into **hierarchical groups** — like folders inside folders.
 
-### Core model (`src/Common.ts`)
+#### Core model (`src/Common.ts`)
 
 - **Group** — a tree node. Can contain other groups, tools, prompts, and resources. Each group knows its parent and computes its fully qualified name (e.g. `com.example.api`).
 - **Tool** — an MCP tool. Can belong to multiple groups at once.
@@ -14,11 +18,11 @@ The project defines a tree-based data model to organize **tools**, **prompts**, 
 - **Resource** — an MCP resource (URI, size, MIME type).
 - **Converter** — generic interface to convert between the internal model and any external format.
 
-### Config (`src/GroupsExtensionConfig.ts`)
+#### Config (`src/GroupsExtensionConfig.ts`)
 
 Extension identifier constants (`org.openmcptools/groups`).
 
-### Schema (`src/GroupSchema.ts`)
+#### Schema (`src/GroupSchema.ts`)
 
 Zod schema for group validation, built on top of the MCP SDK's `BaseMetadataSchema`.
 
@@ -55,7 +59,7 @@ This schema for hierarchical grouping was [initially proposed as a MCP protocol 
 
 The same schema is used for the mcp_extensions_java groups extension](https://github.com/OpenMCPTools/mcp_extensions_java/tree/main/org.openmcptools.extensions.groups) and the [mcp_extensions_python](https://github.com/OpenMCPTools/mcp_extensions_python/tree/main/org.openmcptools.extensions.groups)
 
-## How to test
+### How to test
 
 ```bash
 cd org.openmcptools.extensions.groups
