@@ -57,7 +57,7 @@ This javascript schema implementation is based upon this json-schema
 ```
 This schema for hierarchical grouping was [initially proposed as a MCP protocol enhancement](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/1567#discussioncomment-14608597)
 
-The same schema is used for the mcp_extensions_java groups extension](https://github.com/OpenMCPTools/mcp_extensions_java/tree/main/org.openmcptools.extensions.groups) and the [mcp_extensions_python](https://github.com/OpenMCPTools/mcp_extensions_python/tree/main/org.openmcptools.extensions.groups)
+The same schema is used for the [mcp_extensions_java groups extension](https://github.com/OpenMCPTools/mcp_extensions_java/tree/main/org.openmcptools.extensions.groups) and the [mcp_extensions_python](https://github.com/OpenMCPTools/mcp_extensions_python/tree/main/org.openmcptools.extensions.groups)
 
 ### How to test
 
