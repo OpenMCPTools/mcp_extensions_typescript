@@ -67,6 +67,6 @@ npm test
 ```
 Tests cover both happy paths (creation, hierarchy, relationships) and failure scenarios (invalid names, duplicate removals, re-additions, state consistency).
 
-### Known Projects Using Grouping Extension
+### Known Project Using Extension
 
 [mcp-fusion](https://github.com/vinkius-labs/mcp-fusion)
