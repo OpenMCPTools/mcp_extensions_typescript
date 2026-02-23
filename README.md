@@ -67,6 +67,6 @@ npm test
 ```
 Tests cover both happy paths (creation, hierarchy, relationships) and failure scenarios (invalid names, duplicate removals, re-additions, state consistency).
 
-### Known Project Using Extension
+### Known ProjectS Using Extension (if you are using it and would like to be added to this list, please open pr)
 
 [mcp-fusion](https://github.com/vinkius-labs/mcp-fusion)
