@@ -45,7 +45,6 @@ This javascript schema implementation is based upon this json-schema
                 },
                 "_meta": {
                     "additionalProperties": {},
-                    "description": "See [General fields: `_meta`](/specification/draft/basic/index#meta) for notes on `_meta` usage.",
                     "type": "object"
                 }
             },
