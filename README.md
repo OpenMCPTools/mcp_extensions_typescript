@@ -22,6 +22,39 @@ Extension identifier constants (`org.openmcptools/groups`).
 
 Zod schema for group validation, built on top of the MCP SDK's `BaseMetadataSchema`.
 
+This javascript schema implementation is based upon this json-schema
+
+```json
+        "Group": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "parent": {
+                    "$ref": "#/definitions/Group",
+                },
+                "description": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "_meta": {
+                    "additionalProperties": {},
+                    "description": "See [General fields: `_meta`](/specification/draft/basic/index#meta) for notes on `_meta` usage.",
+                    "type": "object"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "type": "object"
+        }
+```
+This schema for hierarchical grouping was [initially proposed as a MCP protocol enhancement](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/1567#discussioncomment-14608597)
+
+The same schema is used for the mcp_extensions_java groups extension](https://github.com/OpenMCPTools/mcp_extensions_java/tree/main/org.openmcptools.extensions.groups) and the [mcp_extensions_python](https://github.com/OpenMCPTools/mcp_extensions_python/tree/main/org.openmcptools.extensions.groups)
+
 ## How to test
 
 ```bash
@@ -29,5 +62,4 @@ cd org.openmcptools.extensions.groups
 npm install
 npm test
 ```
-
 Tests cover both happy paths (creation, hierarchy, relationships) and failure scenarios (invalid names, duplicate removals, re-additions, state consistency).
