@@ -24,7 +24,7 @@ Extension identifier constants (`org.openmcptools/groups`).
 
 #### Schema (`src/GroupSchema.ts`)
 
-Zod schema for group validation, built on top of the MCP SDK's `BaseMetadataSchema`.
+Zod schema for group validation, built on top of the [MCP Typescript SDK's](https://github.com/modelcontextprotocol/typescript-sdk) `BaseMetadataSchema`.
 
 This javascript schema implementation is based upon this json-schema
 
